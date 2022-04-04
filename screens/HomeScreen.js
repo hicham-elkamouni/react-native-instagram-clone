@@ -1,17 +1,22 @@
 import { View, Text, SafeAreaView ,StyleSheet, StatusBar} from 'react-native'
 import React from 'react'
+import { Header } from '../components/home/Header';
 
 export const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>HOME SCREEN</Text>
+    <SafeAreaView style={[styles.fixed, styles.container]}>
+      <Header/>
     </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop:StatusBar.currentHeight
-  }
+  fixed: {
+      flex: 1,
+      marginTop:StatusBar.currentHeight+ 10
+  },
+   container : {
+      backgroundColor: 'black',
+      flex: 1,
+   }
 });
