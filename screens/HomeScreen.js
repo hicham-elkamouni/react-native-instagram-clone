@@ -13,7 +13,7 @@ export const HomeScreen = () => {
 const styles = StyleSheet.create({
   fixed: {
       flex: 1,
-      marginTop:StatusBar.currentHeight+ 10
+      marginTop:StatusBar.currentHeight
   },
    container : {
       backgroundColor: 'black',
