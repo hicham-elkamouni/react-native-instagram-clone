@@ -82,6 +82,6 @@ const styles = StyleSheet.create({
   unreadBadgeText: {
     color: "white",
     fontWeight : '400',
-    fontSize: 12,
+    fontSize: 11,
   },
 });
