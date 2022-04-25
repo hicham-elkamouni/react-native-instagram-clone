@@ -1,32 +1,42 @@
 export const USERS = [
     {
-        user: "JasminSmith",
+        user: "yassine el houbi",
         image: "https://randomuser.me/api/portraits/med/women/10.jpg",
         // isOnline: true,
     },
     {
-        user: "yamashsimi",
+        user: "rafik enfida",
         image: "https://randomuser.me/api/portraits/med/men/12.jpg",
         // isOnline: true,
     },
     {
-        user: "JohnDoe",
+        user: "youssef bakouri",
         image: "https://randomuser.me/api/portraits/med/women/22.jpg",
         // isOnline: true,
     },
     {
-        user: "silvester",
+        user: "walid moultamis",
         image: "https://randomuser.me/api/portraits/med/men/23.jpg",
         // isOnline: false,
     },
     {
-        user: "ananamakoki",
+        user: "youness hassoune",
         image: "https://randomuser.me/api/portraits/med/women/22.jpg",
         // isOnline: true
     },
     {
-        user: "fatisisco",
+        user: "said essalami",
         image: "https://randomuser.me/api/portraits/med/women/2.jpg",
         // isOnline: true
-    }
+    },
+    {
+        user: "anas el meskine",
+        image: "https://randomuser.me/api/portraits/med/women/10.jpg",
+        // isOnline: true,
+    },
+    {
+        user: "othmane maacha",
+        image: "https://randomuser.me/api/portraits/med/men/12.jpg",
+        // isOnline: true,
+    },
 ]

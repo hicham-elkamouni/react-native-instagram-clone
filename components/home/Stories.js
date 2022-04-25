@@ -9,8 +9,11 @@ export default Stories = () => {
             {
                 USERS.map((story, i) => { 
                     return (
-                        <View>
-                            <Image source={{ uri : story.image }} style={styles.story} key={i}></Image>
+                        <View key={i} style={{ alignItems : 'center'}}>
+                            <Image source={{ uri : story.image }} style={styles.story}/>
+                            <Text style={{color : 'white' , fontSize : 12}}>
+                                {story.user.length > 11 ? story.user.substring(0, 11).toLowerCase() + '...' : story.user.toLowerCase()}
+                            </Text>
                         </View>
                         )
                 })
@@ -23,8 +26,11 @@ export default Stories = () => {
 
 const styles = StyleSheet.create({
     story : {
-        width : 80,
-        height : 80,
-        borderRadius : 40,
+        width : 70,
+        height : 70,
+        borderRadius : 50,
+        marginRight : 10,
+        borderWidth : 3,
+        borderColor : 'orange',
     }
 })
