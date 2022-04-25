@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, StyleSheet, Image } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { USERS } from '../../data/users'
 
@@ -10,7 +10,9 @@ export default Stories = () => {
                 USERS.map((story, i) => { 
                     return (
                         <View key={i} style={{ alignItems : 'center'}}>
-                            <Image source={{ uri : story.image }} style={styles.story}/>
+                            <TouchableOpacity>
+                                <Image source={{ uri : story.image }} style={styles.story}/>
+                            </TouchableOpacity>
                             <Text style={{color : 'white' , fontSize : 12}}>
                                 {story.user.length > 11 ? story.user.substring(0, 11).toLowerCase() + '...' : story.user.toLowerCase()}
                             </Text>
