@@ -15,6 +15,7 @@ export default Stories = () => {
                             </TouchableOpacity>
                             <Text style={{color : 'white' , fontSize : 12}}>
                                 {story.user.length > 11 ? story.user.substring(0, 11).toLowerCase() + '...' : story.user.toLowerCase()}
+                                
                             </Text>
                         </View>
                         )
