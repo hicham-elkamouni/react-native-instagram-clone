@@ -2,7 +2,7 @@ import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity } from 'rea
 import React from 'react'
 import { USERS } from '../../data/users'
 
-export default Stories = () => {
+const Stories = () => {
   return (
     <View style={{marginBottom:13}}>
         <ScrollView horizontal showsHorizontalScrollindicator={false}>
@@ -22,7 +22,7 @@ export default Stories = () => {
                 })
             }
         </ScrollView>
-        <Text style={{ color : 'white' }}>STORIES</Text>
+        
     </View>
   )
 }
@@ -37,3 +37,5 @@ const styles = StyleSheet.create({
         borderColor : 'orange',
     }
 })
+
+export { Stories } 
